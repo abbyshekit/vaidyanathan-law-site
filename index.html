@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhishek Vaidyanathan Legal PC · Digital Assets, AI &amp; Litigation Advisory · Toronto</title>
+<meta name="description" content="A Toronto law practice built around digital assets and AI, with litigation advisory and corporate work to match. Ontario and New York bars.">
+<meta property="og:title" content="Abhishek Vaidyanathan Legal Professional Corporation">
+<meta property="og:description" content="Counsel to the frontier. Digital assets, AI, litigation advisory, and corporate work. Toronto.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B0B0E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0B0E'/%3E%3Ctext x='29' y='47' font-family='Georgia,serif' font-style='italic' font-size='48' fill='%23F2EFE6' text-anchor='middle'%3Ev%3C/text%3E%3Ccircle cx='48' cy='43' r='5' fill='%23C9A55C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Abhishek Vaidyanathan Legal Professional Corporation",
+  "founder": { "@type": "Person", "name": "Abhishek Vaidyanathan" },
+  "email": "avaidyanathanlpc@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+  "areaServed": ["CA", "US", "AE"],
+  "knowsAbout": ["Digital asset regulation", "Token launches", "AI product counsel", "Litigation advisory", "Corporate transactions"]
+}
+</script>
+<style>
+  :root {
+    --bg: #0B0B0E;
+    --panel: #131317;
+    --paper: #F2EFE6;
+    --muted: #8E96A3;
+    --gold: #C9A55C;
+    --gold-bright: #DBB870;
+    --line: rgba(242, 239, 230, 0.13);
+    --line-strong: rgba(242, 239, 230, 0.30);
+    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--paper);
+    font-family: var(--serif);
+    font-optical-sizing: auto;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--gold); color: var(--bg); }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .mono {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .vmark { font-family: var(--serif); font-style: italic; }
+  .vmark .dot { font-style: normal; color: var(--gold); }
+
+  /* Letterhead */
+  .letterhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    text-decoration: none;
+  }
+  .mark .vmark { font-size: 25px; line-height: 1; color: var(--paper); }
+  .mark-name {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .letterhead nav { display: flex; gap: 4px; }
+  .letterhead nav a {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 12px 10px;
+  }
+  .letterhead nav a:hover { color: var(--paper); }
+
+  .doc { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 96px;
+    padding-bottom: 88px;
+  }
+  .hero-ghost {
+    position: absolute;
+    right: -16px;
+    top: -48px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 400px;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(242, 239, 230, 0.15);
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+  .hero-ghost .dot {
+    font-style: normal;
+    -webkit-text-stroke-color: rgba(201, 165, 92, 0.40);
+  }
+  @supports not (-webkit-text-stroke: 1px black) {
+    .hero-ghost { color: rgba(242, 239, 230, 0.05); }
+  }
+  .hero-body { position: relative; z-index: 1; }
+  h1 {
+    font-size: clamp(44px, 8.5vw, 74px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin-bottom: 26px;
+  }
+  .hero .lede {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 30em;
+    margin-bottom: 40px;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 24px;
+    border: 1px solid transparent;
+    transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+  }
+  .btn:active { transform: scale(0.98); }
+  .btn-gold { background: var(--gold); color: var(--bg); }
+  .btn-gold:hover { background: var(--gold-bright); }
+  .btn-ghost { border-color: var(--line-strong); color: var(--paper); }
+  .btn-ghost:hover { border-color: var(--paper); }
+
+  /* Clause sections */
+  .clause { border-top: 1px solid var(--line-strong); padding: 56px 0 64px; }
+  .clause-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .clause-no { color: var(--gold); }
+  .clause-title { color: var(--muted); }
+
+  /* Practice sub-clauses */
+  .item { display: grid; grid-template-columns: 48px 1fr; gap: 8px; padding: 26px 0; }
+  .item + .item { border-top: 1px solid var(--line); }
+  .item-letter {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--muted);
+    padding-top: 5px;
+    transition: color 150ms ease-out;
+  }
+  .item:hover .item-letter { color: var(--gold); }
+  .item h3 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    margin-bottom: 10px;
+  }
+  .item p { color: var(--muted); font-size: 16.5px; }
+
+  /* Counsel */
+  .counsel p { margin-bottom: 22px; }
+  .counsel p:last-of-type { margin-bottom: 40px; }
+  .facts { border-top: 1px solid var(--line); }
+  .facts-row {
+    display: grid;
+    grid-template-columns: 172px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .facts-row dt { color: var(--muted); padding-top: 3px; }
+  .facts-row dd { font-size: 16.5px; }
+
+  /* Engagement */
+  .engage p { color: var(--muted); max-width: 36em; margin-bottom: 36px; }
+  .engage-addr {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--paper);
+    text-decoration: none;
+    padding-bottom: 2px;
+    background-image: linear-gradient(var(--paper), var(--paper));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 1px;
+    transition: background-size 150ms ease-out;
+  }
+  .engage-addr:hover { background-size: 100% 1px; }
+  .engage .cta-row { margin-bottom: 8px; }
+
+  /* Execution block */
+  .execution {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--line-strong);
+    padding: 64px 0 72px;
+  }
+  .execution > :not(.guilloche) { position: relative; z-index: 1; }
+
+  /* Guilloche: engraved rosette behind the signature row */
+  .guilloche {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 320px;
+    height: 320px;
+    max-width: 58%;
+    color: var(--gold);
+    opacity: 0.14;
+    z-index: 0;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .execution:hover .guilloche { animation: guilloche-turn 60s linear infinite; }
+  }
+  @keyframes guilloche-turn { to { transform: rotate(360deg); } }
+  .execution .attest { color: var(--muted); margin-bottom: 56px; }
+  .sig-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+  }
+  .sig-block { flex: 1; max-width: 320px; }
+  .sig-name {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 26px;
+    color: var(--paper);
+    padding-bottom: 10px;
+  }
+  .sig-rule { border: none; border-top: 1px solid var(--line-strong); margin-bottom: 12px; }
+  .sig-title { color: var(--muted); line-height: 2; }
+  .sig-v { font-size: 56px; line-height: 0.9; color: var(--paper); flex: none; padding-bottom: 6px; }
+  .colophon {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  /* Defined-term wink: first colophon span, overrides the uppercase colophon */
+  .colophon .defterm {
+    flex-basis: 100%;
+    text-transform: none;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+  .colophon .defterm .term { color: var(--gold); }
+
+  /* Load-in: hero only. Visible by default; animation hides via backwards fill only while running. */
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { animation: rise 350ms ease-out backwards; }
+    .rv2 { animation-delay: 60ms; }
+    .rv3 { animation-delay: 120ms; }
+    .rv4 { animation-delay: 180ms; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  @media (max-width: 700px) {
+    .letterhead { flex-wrap: wrap; padding: 12px 16px 4px; }
+    .letterhead nav { width: 100%; margin-left: 34px; }
+    .letterhead nav a { padding: 10px 12px 10px 0; font-size: 10px; }
+    .mark .vmark { font-size: 21px; }
+    .mark-name { font-size: 10px; }
+    .doc { padding: 0 20px; }
+    .hero { padding-top: 56px; padding-bottom: 64px; }
+    .hero-ghost { font-size: 240px; right: -32px; top: -24px; }
+    .item { grid-template-columns: 36px 1fr; }
+    .facts-row { grid-template-columns: 1fr; gap: 2px; }
+    .facts-row dt { padding-top: 0; }
+    .sig-row { gap: 28px; }
+    .sig-v { font-size: 44px; }
+  }
+
+  @media (max-width: 560px) {
+    .guilloche { width: 156px; height: 156px; max-width: 52%; right: -8px; bottom: 16px; opacity: 0.10; }
+  }
+
+  @media print {
+    body { background: #fff; color: #111; }
+    .letterhead, .clause, .execution { border-color: #ccc; }
+    .btn, .letterhead nav, .hero-ghost, .guilloche { display: none; }
+    .clause-no { color: #8a6d2f; }
+    .hero .lede, .item p, .clause-title, .facts-row dt, .engage p, .sig-title, .colophon, .item-letter, .execution .attest { color: #444; }
+    .colophon .defterm { color: #444; }
+    .colophon .defterm .term { color: #8a6d2f; }
+  }
+</style>
+</head>
+<body>
+
+<header class="letterhead">
+  <a class="mark" href="#top" aria-label="Abhishek Vaidyanathan Legal Professional Corporation, top of page">
+    <span class="vmark" aria-hidden="true">v<span class="dot">.</span></span>
+    <span class="mark-name">Abhishek Vaidyanathan<br>Legal Professional Corporation</span>
+  </a>
+  <nav aria-label="Sections">
+    <a href="#practice">Practice</a>
+    <a href="#counsel">Counsel</a>
+    <a href="#engagement">Engage</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="doc hero">
+    <span class="hero-ghost reveal" aria-hidden="true">v<span class="dot">.</span></span>
+    <div class="hero-body">
+      <h1 class="reveal rv2">Counsel to the frontier.</h1>
+      <p class="lede reveal rv3">A Toronto practice for digital assets and AI: regulatory and token work, the disputes that follow, and corporate deals from term sheet to close.</p>
+      <div class="cta-row reveal rv4">
+        <a class="btn btn-gold" href="mailto:avaidyanathanlpc@gmail.com?subject=New%20matter">Email the Firm</a>
+        <a class="btn btn-ghost" href="#practice">See the practice</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc clause" id="practice" aria-labelledby="practice-h">
+    <div class="clause-head">
+      <span class="mono clause-no">1.</span>
+      <h2 class="mono clause-title" id="practice-h">Practice</h2>
+    </div>
+
+    <div class="item">
+      <span class="item-letter" aria-hidden="true">(a)</span>
+      <div>
+        <h3>Regulation and enforcement</h3>
+        <p>Licensing strategy and regulatory analysis for digital-asset businesses, with enforcement experience in matters involving the OSC, SEC, CFTC, FINRA, and VARA.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-letter" aria-hidden="true">(b)</span>
+      <div>
+        <h3>Tokens and treasury</h3>
+        <p>Token launches, distribution and market-maker agreements, foundation governance, and treasury documentation, including ISDAs and custody agreements.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-letter" aria-hidden="true">(c)</span>
+      <div>
+        <h3>AI and autonomous agents</h3>
+        <p>Product counsel for AI companies: terms of service, marketplace and publisher agreements, data rights, and liability frameworks for agentic systems.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-letter" aria-hidden="true">(d)</span>
+      <div>
+        <h3>Litigation advisory</h3>
+        <p>Dispute strategy across investigations, enforcement matters, and commercial litigation. I assess exposure, shape the strategy, and manage trial counsel through to resolution.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <span class="item-letter" aria-hidden="true">(e)</span>
+      <div>
+        <h3>Corporate and commercial</h3>
+        <p>M&amp;A, financings, strategic partnerships, and the agreements behind them, from term sheet to close.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc clause counsel" id="counsel" aria-labelledby="counsel-h">
+    <div class="clause-head">
+      <span class="mono clause-no">2.</span>
+      <h2 class="mono clause-title" id="counsel-h">Counsel</h2>
+    </div>
+    <p>I serve as Chief Legal Officer of the NEAR Foundation and NEAR AI, responsible for legal, regulatory, and governance matters across one of the largest ecosystems in crypto.</p>
+    <p>I trained at Shearman &amp; Sterling in New York, where I represented a digital-asset exchange in SEC, CFTC, and SDNY investigations, then practised securities and regulatory litigation at Toronto trial boutiques. Since 2022 I have also co-founded and counselled operating companies across decentralized infrastructure, digital-asset treasuries, and AI.</p>
+    <dl class="facts">
+      <div class="facts-row">
+        <dt class="mono">Bar admissions</dt>
+        <dd>Ontario · New York</dd>
+      </div>
+      <div class="facts-row">
+        <dt class="mono">Education</dt>
+        <dd>Osgoode Hall Law School, JD · University of Toronto, Hons. BA</dd>
+      </div>
+      <div class="facts-row">
+        <dt class="mono">Current roles</dt>
+        <dd>CLO, NEAR Foundation &amp; NEAR AI · Advisor to venture-backed and TSXV-listed digital-asset companies</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="doc clause engage" id="engagement" aria-labelledby="engagement-h">
+    <div class="clause-head">
+      <span class="mono clause-no">3.</span>
+      <h2 class="mono clause-title" id="engagement-h">Engagement</h2>
+    </div>
+    <p>New matters start with a short email: what you are building, the question, and the timeline. Engagements are papered through the professional corporation.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="mailto:avaidyanathanlpc@gmail.com?subject=New%20matter">Email the Firm</a>
+    </div>
+    <p style="margin-top: 28px; margin-bottom: 0;"><a class="engage-addr" href="mailto:avaidyanathanlpc@gmail.com">avaidyanathanlpc@gmail.com</a></p>
+  </section>
+</main>
+
+<footer class="doc execution">
+  <svg class="guilloche" viewBox="0 0 340 340" width="320" height="320" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="0.6" vector-effect="non-scaling-stroke"><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(0.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(9.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(18.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(27.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(36.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(45.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(54.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(63.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(72.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(81.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(90.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(99.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(108.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(117.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(126.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(135.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(144.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(153.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(162.000 170 170)"/><ellipse cx="170" cy="170" rx="150" ry="50" transform="rotate(171.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(9.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(18.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(27.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(36.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(45.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(54.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(63.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(72.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(81.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(90.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(99.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(108.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(117.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(126.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(135.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(144.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(153.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(162.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(171.000 170 170)"/><ellipse cx="170" cy="170" rx="112" ry="74" transform="rotate(180.000 170 170)"/><circle cx="170" cy="170" r="150"/><circle cx="170" cy="170" r="96"/><circle cx="170" cy="170" r="46"/></g></svg>
+  <p class="mono attest">Executed at Toronto, Ontario</p>
+  <div class="sig-row">
+    <div class="sig-block">
+      <p class="sig-name" aria-hidden="true">Abhishek Vaidyanathan</p>
+      <hr class="sig-rule">
+      <p class="mono sig-title">Abhishek Vaidyanathan<br>Barrister &amp; Solicitor · Sole Director</p>
+    </div>
+    <span class="sig-v vmark" aria-hidden="true">v<span class="dot">.</span></span>
+  </div>
+  <div class="colophon">
+    <span class="defterm">“<span class="term">the Firm</span>” means Abhishek Vaidyanathan Legal Professional Corporation</span>
+    <span>Abhishek Vaidyanathan Legal Professional Corporation</span>
+    <span>Ontario Corp. No. 1000412735</span>
+    <span>LSO No. 78891W</span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
